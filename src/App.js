@@ -19,7 +19,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element = {<Home/>}/>
+        <Route path="/" element = {<HomeVideo/>}/>
         <Route path="/welcome" element = {<Welcome/>}/>
         <Route path="/game" element = {<Game/>}/>
         <Route path="/shop" element = {<Shop/>}/>
@@ -29,7 +29,6 @@ function App() {
         <Route path="/shop-r" element = {<ShopR/>}/>
         <Route path="/welcome-r" element = {<WelcomeR/>}/>
         <Route path="/home-r" element = {<HomeR/>}/>
-        <Route path="/home-video" element = {<HomeVideo/>}/>
       </Routes>
     </Router>
   );

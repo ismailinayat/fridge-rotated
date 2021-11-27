@@ -6,7 +6,7 @@ const socket = io("https://fridgeproject.herokuapp.com")
 
     window.location.replace("/welcome")
 })*/
-if (window.location.pathname === '/game') {
+if (window.location.pathname === '/shop-r') {
 	function idleLogout() {
 		var t;
 		window.onload = resetTimer;
