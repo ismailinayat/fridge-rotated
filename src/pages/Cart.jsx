@@ -28,7 +28,7 @@ function Cart() {
             </div>
 
             <div className="go-home">
-            <Link to='/'><button className='back'>Home</button></Link>
+            <Link to='/joystick'><button className='back'>Back to Joystick</button></Link>
             </div>
 
             <div className="cart-heading"><h3>My Cart (1)</h3></div>

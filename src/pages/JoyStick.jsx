@@ -43,14 +43,13 @@ function JoyStick() {
     
     const handleOk = (e) => {
         //socket.emit('ok')
-        setItem(items[currentSelected])
         navigate('/cart')
     }
 
     const handleGoBack = (e) => {
-        //setItem(items[currentSelected])
-        //socket.emit('/home-video');
-        navigate('/joystick')
+        setItem(items[currentSelected])
+        socket.emit('/home-video');
+        navigate('/home-video')
     }
 
     const items = [
@@ -171,10 +170,10 @@ function JoyStick() {
 
             </div>
 
-            <div className="go-back" onClick={(e) => handleGoBack(e)}>
+            {/*<div className="go-back" onClick={(e) => handleGoBack(e)}>
 
                 Back
-            </div>
+    </div>*/}
 
             <div className="heading-mobile">
                 <h2>Press the arrow key</h2>
