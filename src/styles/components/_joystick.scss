@@ -1,0 +1,120 @@
+.joystick-container {
+    //position: relative;
+    .bar {
+        height: 2.5rem;
+        width: 100%;
+        background-color: $color-violet;
+      }
+    
+      .top-bar {
+    
+      }
+
+      .go-back {
+          outline: none;
+          background-color: $color-violet;
+          padding: 1rem 2.5rem;
+          color: $color-white;
+          border: none;
+          position: absolute;
+          font-size: 2rem;
+          top: 4rem;
+          left: 2rem;
+          border-radius: 5px;
+      }
+
+      .heading-mobile {
+          position: absolute;
+          top: 20rem;
+          width: 100%;
+
+          h2 {
+            text-align: center;
+            font-size: 5rem;
+            color: $color-violet;
+            font-weight: 500;
+          }
+      }
+
+      .joystick {
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+
+        transform: translate(-50%, -50%);
+        //background-color: burlywood;
+        width: 30rem;
+        height: 30rem;
+        &-buttons {
+
+            .joystick-btn {
+
+                
+                color: $color-white;
+                position: absolute;
+                font-size: 3rem;
+ 
+               
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .left {
+
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 8rem;
+                height: 20rem;
+
+            }
+
+            .right {
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 8rem;
+                height: 20rem;
+            }
+
+            .top {
+
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 20rem;
+                height: 8rem;
+            }
+
+            .bottom {
+
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 20rem;
+                height: 8rem;
+            }
+
+            .selected {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                padding: 3rem;
+                border-radius: 50%;
+                background-color: $color-violet;
+         
+            }
+            
+        }
+      }
+    
+      .bottom-bar {
+    
+        position: absolute;
+        bottom: 0;
+      }
+}

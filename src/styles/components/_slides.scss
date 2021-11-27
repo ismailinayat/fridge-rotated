@@ -1,0 +1,47 @@
+.slides__container {
+    height: 100vh;
+    //background-color: rgba($color-white, 0.6);
+    position: absolute;
+    width: 100%;
+    //margin-top: 7rem;
+    //left: 1rem;
+    display: flex;
+    //justify-content: center;
+    //align-items: center;
+    flex-direction: column;
+
+    .slide-1 {
+        position: absolute;
+        top: 40rem;
+        width: 100%;
+    
+      }
+
+      .slide-2 {
+        position: absolute;
+        top: 75.3rem;
+        width: 97%;
+        left:1.5%;
+    
+      }
+
+      .slide-3 {
+        position: absolute;
+        top: 117rem;
+        width: 95%;
+        left: 2.5%;
+    
+      }
+
+      .slide-4 {
+        position: absolute;
+        top: 152rem;
+        width: 90%;
+        left: 5%;
+    
+      }
+    
+
+
+
+}

@@ -1,0 +1,184 @@
+.cart-container {
+
+    .bar {
+        height: 2.5rem;
+        width: 100%;
+        background-color: $color-violet;
+      }
+
+      .top-bar {
+    
+    }
+
+    .logo {
+
+        width: 25rem;
+        //height: 6rem;
+        overflow: hidden;
+        margin-left: 5rem;
+    
+        .logo-img {
+    
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+    }
+
+    .go-home {
+        position: absolute;
+            top: 4rem;
+            right: 6rem;
+        .back {
+            outline: none;
+            background-color: $color-violet;
+            padding: 1rem 2.5rem;
+            color: $color-white;
+            border: none;
+            
+            border-radius: 5px;
+        }
+    }
+    .cart-heading {
+
+        margin-top: 5rem;
+        text-align: center;
+
+        h3 {
+            font-size: 2.5rem;
+            font-weight: 500;
+        }
+    }
+
+    .item {
+        margin-top: 10rem;
+        padding: 0 6rem;
+
+        display: flex;
+
+        .item-image {
+
+            height: 10rem;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .item-info {
+
+            margin-left: 4rem;
+            flex-grow: 1;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .item-name {
+
+                h3 {
+                    font-size: 1.6rem;
+                }
+            }
+
+            .item-quantity {
+
+                p {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                }
+            }
+
+            .delete-btn {
+
+                font-size: 1.2rem;
+            }
+
+        }
+
+        .item-price {
+
+            h3 {
+
+                font-size: 1.4rem;
+                padding-top: 0.8rem;
+            }
+        }
+
+    }
+
+    .cart-total {
+
+        margin-top: 2rem;
+        border-top: 1px solid $color-grey-dark ;
+        border-bottom: 1px solid $color-grey-dark ;
+        padding: 2.5rem 6rem;
+        display: flex;
+        justify-content: space-between;
+        .total-heading {
+
+            h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        .total-amount {
+
+            h3 {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .tax-paragraph {
+
+        margin-top: 3rem;
+        text-align: center;
+        p {
+            font-size: 1.4rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+    }
+
+    .qr {
+
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .qr-image-container {
+
+            background-color: $color-light-grey-1;
+            width: 15rem;
+            height: 15rem;
+            overflow: hidden;
+            padding: 1.5rem;
+
+            .qr-image {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .qr-info {
+
+            margin-top: 10rem;
+
+            p {
+                font-size: 2rem;
+            }
+        }
+
+    }
+
+    .bottom-bar {
+    
+        position: absolute;
+        bottom: 0;
+      }
+}

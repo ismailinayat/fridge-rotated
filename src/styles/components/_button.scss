@@ -1,0 +1,51 @@
+/*.btn__container {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}*/
+
+.btn {
+    text-align: center;
+
+
+    &__white {
+        color: rgba(255, 255, 255, 0.877);
+        border: none;
+        outline: none;
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        width: 30rem;
+        height: 15rem;
+        background-color: transparent;
+
+        &:hover {
+            transform: translateY(-3px);
+        }
+
+        &:active {
+            transform: translateY(-1.5px);
+        }
+/*
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $color-primary-dark;
+            border-radius: 50rem;
+            z-index: -1;
+            transition: all 0.4s;
+
+        }
+
+        &:hover::after {
+            transform: scaleX(1.4) scaleY(1.6);
+            opacity: 0;
+        }*/
+    }}

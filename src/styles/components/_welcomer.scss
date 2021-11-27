@@ -1,0 +1,95 @@
+.header-container-r {
+
+    .bar {
+
+        width: 2rem;
+        height: 100vh;
+        background-color: $color-violet;
+    }
+
+    .bar.bottom-bar {
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+
+    .logo-r {
+        //width: 12rem;
+        //height: 20rem;
+        width: 5vw;
+        height: 10vw;
+        overflow: hidden;
+        background-color: transparent;
+        position: absolute;
+        left: 5rem;
+        bottom: 3rem;
+
+        .logo-img-r {
+
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .welcome-heading {
+
+        width: 50rem;
+        //margin-top: 30rem;
+        text-align: center;
+        position: absolute;
+        top: 40rem;
+        left: 20%;
+
+        transform: rotate(-90deg) translateY(-50%);
+    
+        h3 {
+          font-size: 4rem;
+          font-weight: 500;
+          color: $color-violet;
+        }
+      }
+
+      .header {
+
+        position: absolute;
+
+        height: 100%;
+        top: 0;
+        left: 60%;
+
+        .header__left {
+
+            width: 20rem;
+            height: 35rem;
+            position: absolute;
+            bottom: 5rem;
+            transform: rotate(-90deg);
+
+            img {
+
+                width: 100%;
+                height: 100%;
+
+                
+            }
+        }
+
+        .header__right {
+
+            width: 20rem;
+            height: 35rem;
+
+            position: absolute;
+            top: 12rem;
+            transform: rotate(-90deg);
+
+            img {
+
+                width: 100%;
+                height: 100%;
+
+                
+            }
+        }
+      }
+}

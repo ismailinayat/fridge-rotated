@@ -1,0 +1,304 @@
+
+.led-container {
+    
+    .btn-home {
+
+        
+
+        a {
+            outline: none;
+            padding: 1rem 1.6rem;
+            border-radius: 5px;
+            border: none;
+            margin-top: 3rem;
+            cursor: pointer;
+            transition: all 0.2s;
+            background-color: $color-violet;
+            color: white;
+            position: absolute;
+            top: 8rem;
+            left: 8rem;
+            text-decoration: none;
+            font-size: 2rem;
+            z-index: 10;
+        }
+}}
+.section-book {
+    background-image: $color-light-grey-1;
+    padding: 15rem 5rem;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10rem;
+
+
+    @include respond(tab-port) {
+        padding: 10rem 3rem;
+    }
+
+   
+
+    .row {
+
+        max-width: $max-width;
+        margin: 0 auto;
+        position: relative;
+        z-index: 50;
+
+        .book {
+            
+            background-color: $color-white;   
+            //background-color: rgb(241, 240, 209);                                                                                                                                         // to the 'book' div. We have to set some height to see the 
+                                                                                                                                                        // result at the moment.
+            //height: 50rem;
+            background-size: cover;
+            border-radius: 3px;
+            padding: 5rem 10rem;
+            display: flex;
+
+            @include respond(tab-land) {
+                padding: 5rem;
+            }
+
+            @include respond(tab-port) {
+                flex-direction: column;
+            }
+
+            
+
+            .book__form {
+                //background-color:aqua ;
+                width: 60%;
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+            }
+
+            .contact {
+                width: 40%;
+                //background-color: #BEA8AA;
+                background-color: $color-primary;
+                display: flex;
+                align-items: center;
+                padding: 5rem;
+                //color: rgba(255, 255, 255, 0.808);
+                color: $color-light-grey-1;
+
+                @include respond(tab-land) {
+                    padding: 5rem 2rem;
+                    margin-top: 5rem;
+                }
+
+                @include respond(tab-port) {
+                    width: 100%;
+                }
+
+                .contact__info {
+
+                    .heading {
+                        margin-bottom: 5rem;
+
+                        h3 {
+                            font-size: 2.5rem;
+                        }
+                        p {
+                            font-size: 1.2rem;
+                        }
+                    }
+
+                    .info__container {
+                        @include respond(tab-port) {
+                            
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                        }
+
+                        @media only screen and (max-width: 50em) {
+                            flex-direction: column;
+                            align-items: flex-start;
+                        }
+                    }
+
+                    .info {
+
+                        display: flex;
+                        align-items: center;
+                        
+
+                        &:not(:last-child) {
+
+                            margin-bottom: 3rem;
+                        }
+
+                        p {
+                            font-size: 1.4rem;
+                        }
+
+                        .icon {
+
+                            margin-right: 1rem;
+                        }
+                    }
+                    .phone {
+
+                        .phone__icon {
+                            
+
+                            svg {
+                                //fill: $color-primary;
+                                
+                            }
+
+                        }
+
+                        .phone__number {
+
+                            p {
+                                
+                            }
+
+                        }
+
+
+                    }
+
+                    .email {
+
+                        &__icon {
+
+                        }
+
+                        &__mail {
+
+
+                        }
+                    }
+
+                    .address {
+                        
+                        @include respond(tab-port) {
+                            width: 100%;
+
+                        }
+
+                        @include respond(phone) {
+                            width: 100%;
+
+                        }
+                    }
+
+                }
+            }
+
+
+            .form__title {
+                margin-bottom: 8rem;
+                max-width: 60rem;
+
+                h2 {
+                    font-weight: 600;
+                    font-size: 4rem;
+                    margin-bottom: 1rem;
+                    line-height: 7rem;
+                }
+
+                h4 {
+
+                    font-size: 2rem;
+                    font-weight: 300;
+                    color: $color-grey-dark-3;
+                }
+            }
+
+            .form {
+
+            &__group:not(:last-child) {
+            margin-bottom: 2rem;
+            }
+        
+            &__input {
+            color: inherit;
+            font-size: 1.5rem;
+            font-family: inherit;
+            padding: 1.4rem 2rem;
+            //border: none;
+            //background-color: $color-light-grey-1;
+            border-radius: 2px;
+            border-bottom: 3px solid $color-grey-dark-2;
+            width: 80%;
+            display: block;
+            transition: all .3s;
+            
+            &:focus {
+                outline: none;
+                box-shadow: 0 1rem 2rem rgba(black, 0.15);
+                border-bottom: 3px solid $color-green-dark;
+        
+                &:invalid {
+                border-bottom: 3px solid $color-primary;
+                }
+            }
+        
+            &::-webkit-input-placeholder {
+                color: black;
+            }
+        
+            &:placeholder-shown + .form__label {
+                opacity: 0;
+                visibility: hidden;
+                transform: translateY(-4rem);
+            }
+            }
+        
+            &__label {
+            font-size: 1.2rem;
+            margin-left: 2rem;
+            margin-top: 0.7rem;
+            font-weight: 700;
+            display: block;
+            transition: all 0.3s;
+            }
+        
+            .btn {
+
+                outline: none;
+                padding: 1rem 1.6rem;
+                border-radius: 5px;
+                border: none;
+                margin-top: 3rem;
+                cursor: pointer;
+                transition: all 0.2s;
+                background-color: $color-violet;
+                color: $color-white;
+                position: relative;
+
+                .email__loader {
+                    position: absolute;
+                    height: 3rem;
+                    width: 3rem;
+
+                    img {
+                        height: 100%;
+                    width: 100%;
+                    background-color: transparent;
+                    }
+                }
+
+                &:hover {
+
+                    transform: translateY(-3px);
+                }
+
+                &:active {
+                    transform: translateY(-1px);
+                }
+            }
+
+        }
+
+
+  }
+}
+
+  }
