@@ -197,7 +197,7 @@ function ShopR() {
 
                 
                 <img className="logo-img-r" src="/UI/Logo-r.png" alt="" />
-            </div>
+    </div>
 
             <div className="item-container">
                 <div className="item-container-inner">

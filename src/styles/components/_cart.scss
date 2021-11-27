@@ -16,6 +16,11 @@
         //height: 6rem;
         overflow: hidden;
         margin-left: 5rem;
+
+        @include respond (phone) {
+            width: 12rem;
+            margin-top: 3rem;
+        }
     
         .logo-img {
     
@@ -29,6 +34,10 @@
         position: absolute;
             top: 4rem;
             right: 2rem;
+
+            @include respond(phone) {
+                top: 7rem;
+            }
         .back {
             outline: none;
             background-color: $color-violet;
@@ -37,7 +46,13 @@
             border: none;
             
             border-radius: 5px;
+
+            @include respond(phone) {
+                padding: 0.5rem 1rem;
+            }
         }
+
+        
     }
     .cart-heading {
 
@@ -174,6 +189,20 @@
             }
         }
 
+    }
+
+    .payment {
+        position: absolute;
+        margin-top: 5rem;
+        left: 50%;
+        transform: translate(-50%);
+
+        
+            text-decoration: none;
+            padding: 1rem 2rem;
+            background-color: $color-violet;
+            color: $color-white;
+        
     }
 
     .bottom-bar {

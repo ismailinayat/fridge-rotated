@@ -62,10 +62,17 @@ function Cart() {
 
             <div className="tax-paragraph"><p>Prices inclusive of taxes</p></div>
 
-            <div className="qr">
+            {
+            /*<div className="qr">
                 <div className="qr-image-container"><img src="/UI/qr-payment.png" alt="" className="qr-image" /></div>
                 <div className="qr-info"><p>Scan QR Code & Pay the Bill</p></div>
+            </div>*/
+}
+
+            <div onClick={()=> window.location.replace('https://pages.razorpay.com/pl_IQNfBArFPuH1Z3/view')} className='payment'>
+                Pay Now
             </div>
+
             <div className="bar bottom-bar"></div>
         </div>
     )

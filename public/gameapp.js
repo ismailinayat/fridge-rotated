@@ -25,7 +25,7 @@ if (window.location.pathname === '/shop-r') {
 	
 		function resetTimer() {
 			clearTimeout(t);
-			t = setTimeout(yourFunction, 20000);  // time is in milliseconds
+			t = setTimeout(yourFunction, 2000000);  // time is in milliseconds
 		}
 	}
 	idleLogout();
