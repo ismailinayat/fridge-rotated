@@ -11,7 +11,6 @@ import Cart from "./pages/Cart"
 import LED from "./pages/LED"
 import ShopR from "./pages/ShopR"
 import WelcomeR from "./pages/Welcome-r"
-import HomeR from "./pages/Home-r";
 import HomeVideo from "./pages/HomeVideo";
 
 
@@ -28,7 +27,7 @@ function App() {
         <Route path="/LED" element = {<LED/>}/>
         <Route path="/shop-r" element = {<ShopR/>}/>
         <Route path="/welcome-r" element = {<WelcomeR/>}/>
-        <Route path="/home-r" element = {<HomeR/>}/>
+        <Route path="/home" element = {<Home/>}/>
       </Routes>
     </Router>
   );
