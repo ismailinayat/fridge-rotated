@@ -44,14 +44,15 @@ function JoyStick() {
     const handleOk = (e) => {
         //socket.emit('ok')
         navigate('/cart')
+        setItem(items[currentSelected])
     }
-
+/*
     const handleGoBack = (e) => {
         setItem(items[currentSelected])
         socket.emit('/home-video');
         navigate('/home-video')
     }
-
+*/
     const items = [
         {
             id : 1,
