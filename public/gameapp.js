@@ -31,7 +31,7 @@ if (window.location.pathname === '/shop-r') {
 	idleLogout();
 }
 
-
+/*
 if (window.location.pathname === '/game') {
     socket.on('welcome', ()=> {
         window.location.replace("/welcome")
@@ -73,7 +73,7 @@ socket.on('createball', (data)=> {
 
 
 })*/
-
+/*
 socket.on('release', ()=> {
     release();
 })
@@ -264,6 +264,7 @@ function createBall() {
 		xpos = 60 + Math.random() * 280;
 	}
 */
+/*
     socket.emit('createball', xpos)
 	spawn.play();
 	ball = game.add.sprite(xpos, 547, 'ball');
@@ -331,4 +332,4 @@ function launch(x_traj) {
 		whoosh.play();
 	}
 
-}
+}*/

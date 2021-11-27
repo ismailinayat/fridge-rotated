@@ -13,7 +13,7 @@ export function SocketProvider({children}) {
 useEffect(() => {
     const newSocket = io(
         //'http://localhost:8000'
-        'https://fridgeproject.herokuapp.com/'
+        'https://fridge-backend-new.herokuapp.com'
     )
 
     setSocket(newSocket)
