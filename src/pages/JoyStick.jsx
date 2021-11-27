@@ -43,13 +43,14 @@ function JoyStick() {
     
     const handleOk = (e) => {
         //socket.emit('ok')
+        setItem(items[currentSelected])
         navigate('/cart')
     }
 
     const handleGoBack = (e) => {
-        setItem(items[currentSelected])
-        socket.emit('/home-video');
-        navigate('/home-video')
+        //setItem(items[currentSelected])
+        //socket.emit('/home-video');
+        navigate('/joystick')
     }
 
     const items = [
