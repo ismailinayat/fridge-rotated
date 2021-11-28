@@ -1,22 +1,22 @@
-import React, {useContext, useEffect} from 'react';
+import React, {useContext/*, useEffect*/} from 'react';
 import {ItemContext} from '../contexts/ItemContext';
-import { Link, useNavigate } from 'react-router-dom';
-import {useSocket} from '../contexts/SocketProvider';
+import { Link/*, useNavigate*/ } from 'react-router-dom';
+//import {useSocket} from '../contexts/SocketProvider';
 
 function Cart() {
 
-    const socket = useSocket();
+    //const socket = useSocket();
     const {item} = useContext(ItemContext);
-    const navigate = useNavigate();
+    //const navigate = useNavigate();
 
 
-    useEffect(() => {
+    /*useEffect(() => {
         if (socket == null) return
         socket.on('welcome', ()=> {
           navigate('/welcome')
       })
       return () => socket.off('welcome')
-      })
+      })*/
 
 
     return (

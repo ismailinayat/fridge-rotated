@@ -6,7 +6,7 @@
 
     window.location.replace("/welcome")
 })*/
-if (window.location.pathname === '/shop-r') {
+if (window.location.pathname === '/shop') {
 	function idleLogout() {
 		var t;
 		window.onload = resetTimer;
@@ -25,7 +25,7 @@ if (window.location.pathname === '/shop-r') {
 	
 		function resetTimer() {
 			clearTimeout(t);
-			t = setTimeout(yourFunction, 2000000);  // time is in milliseconds
+			t = setTimeout(yourFunction, 20000);  // time is in milliseconds
 		}
 	}
 	idleLogout();

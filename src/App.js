@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import React, {useContext} from 'react'
+import {RotateContext} from './contexts/RotateContext';
 
 import './styles/globals.scss';
 import Home from './pages/Home'
@@ -12,22 +13,32 @@ import LED from "./pages/LED"
 import ShopR from "./pages/ShopR"
 import WelcomeR from "./pages/Welcome-r"
 import HomeVideo from "./pages/HomeVideo";
+import FirstPage from "./pages/FirstPage";
+import ShopR90 from "./pages/ShopR90";
+import HomeVideo90 from "./pages/HomeVideo90";
 
 
 function App() {
+
+  const {rotate} = useContext(RotateContext)
   return (
     <Router>
       <Routes>
-        <Route path="/" element = {<HomeVideo/>}/>
-        <Route path="/welcome" element = {<Welcome/>}/>
-        <Route path="/game" element = {<Game/>}/>
-        <Route path="/shop" element = {<Shop/>}/>
+
+        <Route path="/welcomeold" element = {<Welcome/>}/>
+        <Route path="/gameold" element = {<Game/>}/>
+        <Route path="/shopold" element = {<Shop/>}/>
+        <Route path="/homeold" element = {<Home/>}/>
+        <Route path="/LEDold" element = {<LED/>}/>
+        <Route path="/welcome-rold" element = {<WelcomeR/>}/>
+
+
+        <Route path="/" element = {<FirstPage/>}/>
+        <Route path="/home" element = {rotate === 0 ? <HomeVideo/> : <HomeVideo90/>}/>
         <Route path="/joystick" element = {<JoyStick/>}/>
         <Route path="/cart" element = {<Cart/>}/>
-        <Route path="/LED" element = {<LED/>}/>
-        <Route path="/shop-r" element = {<ShopR/>}/>
-        <Route path="/welcome-r" element = {<WelcomeR/>}/>
-        <Route path="/home" element = {<Home/>}/>
+        <Route path="/shop" element = {rotate === 0 ? <ShopR/> : <ShopR90/>}/>
+        
       </Routes>
     </Router>
   );
