@@ -7,13 +7,11 @@
 if (window.location.pathname === '/') {
   //console.log('yes home page')
   //console.clear();
-  let videoHome;
 
   
 let session = false;
 let border = 150;
 let video = document.querySelector("#video");
-
 let audio = document.querySelector("#audio");
 
 function init() {
@@ -115,15 +113,15 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           //console.log("Lets sell!!!!!!!!!!!!!!")
           //console.log(audio)
           //console.log(videoHome)
-          //audio.play();
+          audio.play();
           
 
           
-         /* setTimeout(() => {
-            
-          }, 9000);*/
-
+         setTimeout(() => {
           window.location.replace('/home')
+          }, 9000);
+
+          
           session = true;
           detected = false;  
         }

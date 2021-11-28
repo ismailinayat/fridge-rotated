@@ -4,8 +4,7 @@ import {useNavigate } from 'react-router-dom';
 import QRR from '../components/QRR'
 
 import {useSocket} from '../contexts/SocketProvider';
-import audioTag from './audio.wav';
-import ReactAudioPlayer from 'react-audio-player';
+
 
   
     
@@ -44,13 +43,11 @@ function HomeVideo90() {
 
     */
 
-   
 
 
     return (
         <div className="video-container90">
             
-            <ReactAudioPlayer src={audioTag} autoPlay/>
             <QRR></QRR>
             
             <div className="bg-video">
