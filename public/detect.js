@@ -7,12 +7,28 @@
 if (window.location.pathname === '/') {
   //console.log('yes home page')
   //console.clear();
+const ctx = new AudioContext();
+let audio;
 
-  
+fetch("./audio.wav")
+  .then(data => data.arrayBuffer())
+  .then(arrayBuffer => ctx.decodeAudioData(arrayBuffer))
+  .then(decodedAudio => {
+    audio = decodedAudio;
+  });
+
+function playAudio() {
+  const playSound = ctx.createBufferSource();
+  playSound.buffer = audio;
+  playSound.connect(ctx.destination);
+  playSound.start(ctx.currentTime);
+}
+
+//window.addEventListener('mousedown', playAudio)
 let session = false;
 let border = 150;
 let video = document.querySelector("#video");
-let audio = document.querySelector("#audio");
+//let audio = document.querySelector("#audio");
 
 function init() {
     let initialized = false;
@@ -113,13 +129,15 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           //console.log("Lets sell!!!!!!!!!!!!!!")
           //console.log(audio)
           //console.log(videoHome)
-          audio.play();
+          //audio.play();
+
+          playAudio();
           
 
           
          setTimeout(() => {
           window.location.replace('/home')
-          }, 9000);
+          }, 10000);
 
           
           session = true;
