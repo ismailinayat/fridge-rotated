@@ -1,10 +1,21 @@
+
+
+
+
+
+
 if (window.location.pathname === '/') {
   //console.log('yes home page')
-  console.clear();
+  //console.clear();
+  let videoHome;
 
+  
 let session = false;
 let border = 150;
 let video = document.querySelector("#video");
+
+let audio = document.querySelector("#audio");
+
 function init() {
     let initialized = false;
     if (initialized) return;
@@ -102,7 +113,17 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           //Need to send request to frontend
   
           //console.log("Lets sell!!!!!!!!!!!!!!")
-          window.location.replace('/home')
+          //console.log(audio)
+          //console.log(videoHome)
+          audio.play();
+          video.pause();
+
+          
+          setTimeout(() => {
+            window.location.replace('/home')
+          }, 9000);
+
+          
           session = true;
           detected = false;  
         }
