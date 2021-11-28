@@ -119,7 +119,7 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           norec ++;
         }
   
-        if (dcount > 3){
+        if (dcount > 1){
           dcount = 0;
           clearInterval(countDetected);
   
