@@ -1,7 +1,7 @@
 import React from 'react'
 import QRCode from 'qrcode.react';
 
-    const qrValue="https://fridge-rotated.vercel.app/joystick"
+    const qrValue="https://fridge.in.ngrok.io/joystick"
     //const qrValue="http://localhost:3000"
 function QRR() {
     return (
