@@ -18,7 +18,7 @@ function HomeVideo90() {
         if (socket == null) return
         socket.on('shop', ()=> {
             console.log('This came from joystick')
-            navigate('/shop-r90')
+            navigate('/shop')
         })
 
         return () => socket.off('shop')
