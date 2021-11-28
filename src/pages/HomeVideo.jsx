@@ -41,6 +41,7 @@ function HomeVideo() {
         <div className="video-container">
 
             <QRR></QRR>
+            <audio src="/audio.wav"></audio>
             <div className="bg-video">
                 <video className="bg-video__content" autoPlay muted loop>
                   <source src="/home/fridgevideo.mp4" type="video/mp4"/>

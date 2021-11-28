@@ -115,15 +115,15 @@ if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
           //console.log("Lets sell!!!!!!!!!!!!!!")
           //console.log(audio)
           //console.log(videoHome)
-          audio.play();
-          video.pause();
+          //audio.play();
+          
 
           
-          setTimeout(() => {
-            window.location.replace('/home')
-          }, 9000);
+         /* setTimeout(() => {
+            
+          }, 9000);*/
 
-          
+          window.location.replace('/home')
           session = true;
           detected = false;  
         }
