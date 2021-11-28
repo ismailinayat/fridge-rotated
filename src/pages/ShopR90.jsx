@@ -13,6 +13,16 @@ function ShopR90() {
     const socket = useSocket();
 
     useEffect(() => {
+        let body = document.querySelector('body');
+        var clickEvent = new MouseEvent("click", {
+            "view": window,
+            "bubbles": true,
+            "cancelable": false
+        });
+
+        body.dispatchEvent(clickEvent)
+        
+        console.log(body)
         if (socket == null) return
         socket.on('left', ()=> {
             console.log('left clicked')
